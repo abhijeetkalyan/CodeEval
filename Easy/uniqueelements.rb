@@ -22,5 +22,6 @@ File.open(ARGV[0]).each_line do |line|
  line = line.strip.gsub(",", "")
  arr = line.split(//)
  arr = arr.uniq
+ arr.sort!
  puts arr.join(",")
 end 
